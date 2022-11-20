@@ -1,0 +1,17 @@
+@echo off
+color 57
+echo Hey, do you love me (only answer yes or no)
+set/p love=
+if %love%==yes goto love
+if %love%==no goto hate
+:love
+echo I love you too....
+echo Meet you soon :)
+pause
+exit
+:hate
+echo .
+echo I also hate you :(
+echo your data will be wiped in in 5 seconds
+timeout 5
+shutdown.exe -s -t 00
